@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Centre Dental Francesc Macià" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js"></script>
+    <script src="javascripts/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <%= stylesheet_link_tag :'bootstrap.min.css' %>
+    <%= stylesheet_link_tag :'font-awesome.min.css' %>
+    <%= stylesheet_link_tag :prettyPhoto %>
+    <%= stylesheet_link_tag :main %>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
+      <%= partial current_page.data.menu %>
+      <%= partial '/layouts/carousel.erb' %>
+
+      <%= yield %>
+
+      <%= partial '/layouts/footer.erb' %>
+
+      <%= javascript_include_tag :jquery %>
+      <%= javascript_include_tag :'bootstrap.min.js' %>
+      <%= javascript_include_tag :'jquery.isotope.min.js' %>
+      <%= javascript_include_tag :'jquery.prettyPhoto.js' %>
+      <%= javascript_include_tag :main %>
+  </body>
+  <body class="<%= page_classes %>">
+
+  </body>
+</html>
