@@ -1,1 +1,55 @@
-jQuery(function(o){o(function(){o("#main-slider.carousel").carousel({interval:1e4,pause:!1})});var t=o(".contact-form");t.submit(function(){return $this=o(this),o.post(o(this).attr("action"),function(o){$this.prev().text(o.message).fadeIn().delay(3e3).fadeOut()},"json"),!1}),o(".navbar-nav > li.anchor").click(function(t){t.preventDefault();var i=o(this).find(">a").prop("hash");o("html, body").animate({scrollTop:o(i).offset().top},500)}),o('[data-spy="scroll"]').each(function(){o(this).scrollspy("refresh")}),o("a.preview").prettyPhoto({social_tools:!1}),o(window).load(function(){$portfolio=o(".portfolio-items"),$portfolio.isotope({itemSelector:"li",layoutMode:"fitRows"}),$portfolio_selectors=o(".portfolio-filter >li.anchor>a"),$portfolio_selectors.on("click",function(){$portfolio_selectors.removeClass("active"),o(this).addClass("active");var t=o(this).attr("data-filter");return $portfolio.isotope({filter:t}),!1})})});
+jQuery(function($) {
+
+	$(function(){
+		$('#main-slider.carousel').carousel({
+			interval: 10000,
+			pause: false
+		});
+	});
+
+	//Ajax contact
+	var form = $('.contact-form');
+	form.submit(function () {
+		$this = $(this);
+		$.post($(this).attr('action'), function(data) {
+			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
+		},'json');
+		return false;
+	});
+
+	//smooth scroll
+	$('.navbar-nav > li.anchor').click(function(event) {
+		event.preventDefault();
+		var target = $(this).find('>a').prop('hash');
+		$('html, body').animate({
+			scrollTop: $(target).offset().top
+		}, 500);
+	});
+
+	//scrollspy
+	$('[data-spy="scroll"]').each(function () {
+		var $spy = $(this).scrollspy('refresh')
+	})
+
+	//PrettyPhoto
+	$("a.preview").prettyPhoto({
+		social_tools: false
+	});
+
+	//Isotope
+	$(window).load(function(){
+		$portfolio = $('.portfolio-items');
+		$portfolio.isotope({
+			itemSelector : 'li',
+			layoutMode : 'fitRows'
+		});
+		$portfolio_selectors = $('.portfolio-filter >li.anchor>a');
+		$portfolio_selectors.on('click', function(){
+			$portfolio_selectors.removeClass('active');
+			$(this).addClass('active');
+			var selector = $(this).attr('data-filter');
+			$portfolio.isotope({ filter: selector });
+			return false;
+		});
+	});
+});
