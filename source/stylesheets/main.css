@@ -308,10 +308,10 @@ a:focus {
   -o-transition: none;
   transition: none;
 }
-#pricing .box {
+#location .box {
   background-color: #f9f9f9;
 }
-#pricing .plan {
+#location .plan {
   background: #fff;
   list-style: none;
   margin: 0 0 20px;
@@ -319,34 +319,34 @@ a:focus {
   padding: 0;
   border-bottom: 1px solid #e1e1e1;
 }
-#pricing .plan li {
+#location .plan li {
   padding: 10px 0;
   margin: 0 15px;
   border-bottom: 1px dashed #eee;
 }
-#pricing .plan li.plan-name {
+#location .plan li.plan-name {
   padding: 15px 0;
   font-size: 18px;
   font-weight: 700;
 }
-#pricing .plan li.plan-price {
+#location .plan li.plan-price {
   color: #666;
   padding: 15px 0;
   font-size: 48px;
 }
-#pricing .plan li.plan-action {
+#location .plan li.plan-action {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 0;
 }
-#pricing .plan.featured {
+#location .plan.featured {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-#pricing .plan.featured .plan-price {
+#location .plan.featured .plan-price {
   color: #fff;
   background-color: #52b6ec;
   border-bottom-color: #52b6ec;

@@ -1,0 +1,68 @@
+<section id="location">
+  <div class="container">
+    <div class="box">
+      <div class="center">
+        <h2>Nuestro centro</h2>
+        <p class="lead">Passeig Francesc Macià, 76, 08173, Sant Cugat del Vallès, Barcelona</p>
+      </div><!--/.center-->
+
+      <div class="gap"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <strong>Dirección:</strong><br /><br />
+
+          Centre Dental Francesc Macià<br />
+          Passeig Francesc Macià, 76 <br />
+          08173 Sant Cugat del Vallès (Barcelona)<br /><br />
+
+          Teléfono: 935 89 87 60<br />
+          Email: <a href="mailto:info@centredentalfrancescmacia.com">info@centredentalfrancescmacia.com</a>
+        </div>
+        <div class="col-md-4">
+          <strong>Horarios de atención:</strong><br /><br />
+
+          Lunes a jueves <br />
+          De 09:30 a 13:30 <br />
+          Viernes <br />
+          De 09:30 a 16:00
+        </div>
+      </div>
+
+      <div class="gap"></div>
+
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+      <div style='overflow:hidden;height:440px;width:100%;'>
+        <div id='gmap_canvas' style='height:440px;width:100%;'></div>
+        <div>
+          <small><a href="http://embedgooglemaps.com"> embed google maps </a></small>
+        </div>
+        <div>
+          <small><a href="https://privacypolicytemplate.net">privacy policy example</a></small>
+        </div>
+        <style>#gmap_canvas img {
+          max-width: none !important;
+          background: none !important;
+        }</style>
+      </div>
+      <script type='text/javascript'>function init_map() {
+        var myOptions = {
+          zoom: 16,
+          center: new google.maps.LatLng(41.47911721954355, 2.0824554141555573),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({
+          map: map,
+          position: new google.maps.LatLng(41.47911721954355, 2.0824554141555573)
+        });
+        infowindow = new google.maps.InfoWindow({content: '<strong>Centre Dental Francesc Macià</strong><br>Passeig Francesc Macià, 76, Sant Cugat del Vallès<br>'});
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+      }
+      google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+    </div>
+  </div>
+</section><!--/#location-->
