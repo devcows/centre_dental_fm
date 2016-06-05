@@ -48,7 +48,7 @@ a:focus {
   z-index: 99999;
 }
 #main-slider {
-  background-image: url(/centre_dental_fm/images/slider-bg.jpg);
+  background-image: url(../images/slider-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
@@ -477,7 +477,7 @@ a:focus {
   margin-left: 20px;
   width: 200px;
   height: 78px;
-  background: url(/centre_dental_fm/images/logo.png) no-repeat 0 50%;
+  background: url(../images/logo.png) no-repeat 0 50%;
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
