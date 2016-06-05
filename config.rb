@@ -42,5 +42,6 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  activate :asset_host, :host => '/centre_dental_fm'
+  # Only for github io
+  # activate :asset_host, :host => '/centre_dental_fm'
 end
