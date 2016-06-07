@@ -8,7 +8,7 @@ active_about_us: active
   <div class="container">
     <div class="box">
       <div class="center">
-        <h2>Nuestro equipo</h2>
+        <h2><%= t('.menus.equipo') %></h2>
         <p class="lead">Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.
         </p>
       </div>
@@ -17,14 +17,20 @@ active_about_us: active
       <div class="row">
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
-            <h3>Dra Cristina Carrasco Ibarra
+            <p>
+              <%= image_tag 'cristina_carrasco.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Dra Cristina Carrasco' %>
+            </p>
+            <h3>Dra Cristina Carrasco
               <br/>
               <small class="designation">
-                Licenciada en Odontología. Num Col COEC: 3962<br/>
-                Postgrado de Ortodoncia<br/>
-                Master Damon<br/>
-                Master Invisalign
+                <ul class="text-left">
+                  <li>Licenciada en Odontología</li>
+                  <li>Postgrado de Ortodoncia</li>
+                  <li>Master Damon</li>
+                  <li>Master Invisalign</li>
+                </ul>
+
+                Num Col COEC: 3962<br/>
               </small>
             </h3>
           </div>
@@ -32,8 +38,10 @@ active_about_us: active
 
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
-            <h3>Dra, Lidia Tura
+            <p>
+              <%= image_tag 'lidia_tura.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Dra Lidia Tura' %>
+            </p>
+            <h3>Dra Lidia Tura
               <br/>
               <small class="designation">Odontología General</small>
             </h3>
@@ -42,8 +50,10 @@ active_about_us: active
 
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
-            <h3>Dra. MªÀngels Sanchez
+            <p>
+              <%= image_tag 'team1.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Dra MªÀngels Sanchez' %>
+            </p>
+            <h3>Dra MªÀngels Sanchez
               <br/>
               <small class="designation">Cirugía Oral e Implantología</small>
             </h3>
@@ -54,7 +64,9 @@ active_about_us: active
       <div class="row">
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
+            <p>
+              <%= image_tag 'team1.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Eva Arrellano' %>
+            </p>
             <h3>Eva Arrellano
               <br/>
               <small class="designation">Logopeda y psicóloga infantil</small>
@@ -64,7 +76,9 @@ active_about_us: active
 
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
+            <p>
+              <%= image_tag 'monica.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Mònica' %>
+            </p>
             <h3>Mònica
               <br/>
               <small class="designation">Higienista</small>
@@ -74,8 +88,10 @@ active_about_us: active
 
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
-            <h3>Cristina Gonzalez Clarás
+            <p>
+              <%= image_tag 'cristina_gonzalez.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Cristina Gonzalez' %>
+            </p>
+            <h3>Cristina Gonzalez
               <br/>
               <small class="designation">Auxiliar dental</small>
             </h3>
@@ -87,8 +103,10 @@ active_about_us: active
       <div class="row">
         <div class="col-sm-4">
           <div class="member">
-            <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt=""></p>
-            <h3>Eva
+            <p>
+              <%= image_tag 'eva_jimenez.jpg', class: 'img-responsive img-thumbnail img-circle', alt: 'Eva Jiménez' %>
+            </p>
+            <h3>Eva Jiménez
               <br/>
               <small class="designation">Recepcionista</small>
             </h3>
