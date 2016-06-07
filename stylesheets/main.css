@@ -52,7 +52,7 @@ a:focus {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   padding: 200px 0;
   color: #fff;
 }

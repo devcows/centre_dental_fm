@@ -43,8 +43,8 @@
           <li><a href="index.html#main-slider"><i class="icon-home"></i></a></li>
           <li><a href="index.html#business">La clínica</a></li>
           <li><a href="index.html#services">Servicios</a></li>
-          <li class="active"><a href="about-us.html">Equipo</a></li>
-          <li class=""><a href="contact.html">Contacto</a></li>
+          <li class=""><a href="about-us.html">Equipo</a></li>
+          <li class="active"><a href="contact.html">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -74,119 +74,6 @@
     <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
 </section><!--/#main-slider-->
 
-
-<section id="about-us">
-  <div class="container">
-    <div class="box">
-      <div class="center">
-        <h2>Equipo</h2>
-        <p class="lead">Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.
-        </p>
-      </div>
-      <div class="gap"></div>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/cristina_carrasco.jpg" class="img-responsive img-thumbnail img-circle" alt="Dra Cristina Carrasco" />
-            </p>
-            <h3>Dra Cristina Carrasco
-              <br/>
-              <small class="designation">
-                <ul class="text-left">
-                  <li>Licenciada en Odontología</li>
-                  <li>Postgrado de Ortodoncia</li>
-                  <li>Master Damon</li>
-                  <li>Master Invisalign</li>
-                </ul>
-
-                Num Col COEC: 3962<br/>
-              </small>
-            </h3>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/lidia_tura.jpg" class="img-responsive img-thumbnail img-circle" alt="Dra Lidia Tura" />
-            </p>
-            <h3>Dra Lidia Tura
-              <br/>
-              <small class="designation">Odontología General</small>
-            </h3>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/team1.jpg" class="img-responsive img-thumbnail img-circle" alt="Dra MªÀngels Sanchez" />
-            </p>
-            <h3>Dra MªÀngels Sanchez
-              <br/>
-              <small class="designation">Cirugía Oral e Implantología</small>
-            </h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/team1.jpg" class="img-responsive img-thumbnail img-circle" alt="Eva Arrellano" />
-            </p>
-            <h3>Eva Arrellano
-              <br/>
-              <small class="designation">Logopeda y psicóloga infantil</small>
-            </h3>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/monica.jpg" class="img-responsive img-thumbnail img-circle" alt="Mònica" />
-            </p>
-            <h3>Mònica
-              <br/>
-              <small class="designation">Higienista</small>
-            </h3>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/cristina_gonzalez.jpg" class="img-responsive img-thumbnail img-circle" alt="Cristina Gonzalez" />
-            </p>
-            <h3>Cristina Gonzalez
-              <br/>
-              <small class="designation">Auxiliar dental</small>
-            </h3>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="member">
-            <p>
-              <img src="/images/eva_jimenez.jpg" class="img-responsive img-thumbnail img-circle" alt="Eva Jiménez" />
-            </p>
-            <h3>Eva Jiménez
-              <br/>
-              <small class="designation">Recepcionista</small>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div><!--/.box-->
-  </div><!--/.container-->
-</section><!--/#about-us-->
 
 <section id="location">
   <div class="container">
@@ -262,6 +149,44 @@
 </section><!--/#location-->
 
 
+<section id="contact">
+  <div class="container">
+    <div class="box last">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Formulario de contacto</h1>
+          <p>¿Tienes alguna pregunta? Dejanos un mensaje, solo tienes que rellanar los campos a continuación o enviarnos un email a <a href="mailto:info@centredentalfrancescmacia.com">info@centredentalfrancescmacia.com</a> y te contestaremos lo antes posible.</p>
+          <div class="status alert alert-success" style="display: none"></div>
+          <form id="main-contact-form" class="contact-form" name="contact-form" action="https://formspree.io/info@centredentalfrancescmacia.com" method="POST" role="form">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input name="_subject" type="text" class="form-control" required="required" placeholder="Asunto" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input name="_replyto" type="text" class="form-control" required="required" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Mensaje..."></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-danger btn-lg">Enviar mensaje</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div><!--/.col-sm-6-->
+      </div><!--/.row-->
+    </div><!--/.box-->
+  </div><!--/.container-->
+</section><!--/#contact-->
+
 
 <footer id="footer">
   <div class="container">
@@ -294,7 +219,7 @@
 <script src="/javascripts/jquery.prettyPhoto.js"></script>
 <script src="/javascripts/main.js"></script>
 </body>
-<body class="about-us">
+<body class="ca ca_contact">
 
 </body>
 </html>
