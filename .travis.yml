@@ -1,0 +1,22 @@
+cache: bundler
+language: ruby
+rvm:
+  - 2.3.0
+install:
+  - gem middleman
+script:
+  - middleman build
+env:
+  global:
+    - ENCRYPTION_LABEL: 7d8c8f160df2
+    - COMMIT_AUTHOR_EMAIL: hello@devcows.com
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash ./deploy.sh
+  on:
+    branch: master
+notifications:
+  slack:
+    rooms:
+      - devcows:6UKRludq3reDkMA4RjuhTpWj#devcows_centredental
