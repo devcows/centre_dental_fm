@@ -3,8 +3,8 @@ language: ruby
 rvm:
   - 2.3.0
 install:
-  - gem middleman
-script:
+  - bundle install
+script:  
   - middleman build
 env:
   global:
