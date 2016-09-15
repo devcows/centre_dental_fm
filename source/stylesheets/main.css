@@ -56,7 +56,7 @@ a:focus {
   padding: 200px 0;
   color: #fff;
 }
-#main-slider .item {
+.carousel .item {
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
   -webkit-transition: opacity ease-in-out 500ms;
@@ -70,11 +70,11 @@ a:focus {
   z-index: 1;
   text-align: center;
 }
-#main-slider .item:first-child {
+.carousel .item:first-child {
   top: auto;
   position: relative;
 }
-#main-slider .item.active {
+.carousel .item.active {
   opacity: 1;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -82,15 +82,15 @@ a:focus {
   transition: opacity ease-in-out 500ms;
   z-index: 2;
 }
-#main-slider .item.active h1 {
+.carousel .item.active h1 {
   -webkit-animation: scaleUp 400ms;
   -moz-animation: scaleUp 400ms;
   -o-animation: scaleUp 400ms;
   -ms-animation: scaleUp 400ms;
   animation: scaleUp 400ms;
 }
-#main-slider .prev,
-#main-slider .next {
+.carousel .prev,
+.carousel .next {
   position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -105,17 +105,17 @@ a:focus {
   border-radius: 4px;
   z-index: 5;
 }
-#main-slider .prev:hover,
-#main-slider .next:hover {
+.carousel .prev:hover,
+.carousel .next:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-#main-slider .prev {
+.carousel .prev {
   left: 10px;
 }
-#main-slider .next {
+.carousel .next {
   right: 10px;
 }
-#main-slider h1 {
+.carousel h1 {
   font-size: 68px;
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
   color: #fff;

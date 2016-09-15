@@ -15,6 +15,25 @@ menu: /layouts/menu.erb
           un ambiente cercano y familiar.
         </p>
       </div><!--/.center-->
+
+      <% CLINICA_IMAGES = %w(clinica_1_MG_1296.jpg clinica_2_MG_0437.jpg clinica_3_MG_1277.jpg clinica_4_MG_1292.jpg) %>
+      <% if CLINICA_IMAGES %>
+        <div id="clinica-slider" class="carousel">
+          <div class="carousel-inner">
+              <% CLINICA_IMAGES.each_with_index do |image_src, i| %>
+                <div class="item <%= 'active' if i.zero? %>">
+                    <div class="container">
+                        <div class="carousel-content">
+                            <%= image_tag image_src, alt: 'Dra Cristina Carrasco', height: '600px' %>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+              <% end %>
+          </div><!--/.carousel-inner-->
+          <a class="prev" href="#clinica-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
+          <a class="next" href="#clinica-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+        </div>
+      <% end %>
     </div><!--/.box-->
   </div><!--/.container-->
 </section><!--/#services-->
@@ -49,7 +68,7 @@ menu: /layouts/menu.erb
           <div class="center">
             <i class="icon-md icon-color3"></i>
             <h4>ODONTOLOGÍA ESTÉTICA</h4>
-            <p>Blancamientos y Carillas.</p>
+            <p>Blanqueamiento y Carillas.</p>
           </div>
         </div><!--/.col-md-4-->
       </div>

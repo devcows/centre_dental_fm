@@ -1,7 +1,7 @@
 jQuery(function($) {
 
 	$(function(){
-		$('#main-slider.carousel').carousel({
+		$('.carousel').carousel({
 			interval: 10000,
 			pause: false
 		});
