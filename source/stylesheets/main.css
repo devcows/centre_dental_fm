@@ -53,7 +53,7 @@ a:focus {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: repeat-x;
-  padding: 200px 0;
+  padding: 130px 0 30px 0;
   color: #fff;
 }
 .carousel .item {
@@ -464,7 +464,7 @@ a:focus {
 }
 .navbar-default {
   background: #fff;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0;
   border: 0;
   padding: 0;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
@@ -476,11 +476,10 @@ a:focus {
   border-radius: 0 0 0 5px;
 }
 .navbar-default .navbar-brand {
-  margin-right: 50px;
-  margin-left: 20px;
+  margin: 0 12px;
   width: 200px;
   height: 78px;
-  background: url(../images/logo.png) no-repeat 0 50%;
+  background: url(../images/logo.png) no-repeat -5px 50%;
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
@@ -586,6 +585,12 @@ textarea#message {
   padding: 10px 15px;
   height: 220px;
 }
+@media (min-width: 768px){
+  .navbar-nav {
+      float: right;
+  }
+}
+
 @keyframes scaleUp {
   0% {
     opacity: 0;
